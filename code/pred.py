@@ -37,7 +37,7 @@ if __name__ == "__main__":
     parser.add_argument('--step_size', default=0.02, type=float, help="integration step size")
     parser.add_argument('--n_svf', default=4, type=int, help="number of velocity fields")
     parser.add_argument('--n_res', default=3, type=int, help="number of scales")
-    parser.add_argument('-weight', action='store',dest='weight',type=str, required=True, help='name of trained weight file')
+    parser.add_argument('-weight', action='store',dest='weight',type=str, default='FetalSurfaceExtraction/model/brain_age_weights.h5', help='name of trained weight file')
     parser.add_argument('-n_slice',action='store',dest='num_slice',default=5,type=int, help='Number of training slice from a volume')
     parser.add_argument('-gpu',action='store',dest='num_gpu',default='0', type=str, help='GPU selection')
     parser.add_argument('-batch_size', action='store',dest='bsize',default=32, type=int, help='[option] batch_size e.g. 30')
