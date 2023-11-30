@@ -146,8 +146,8 @@ if __name__ == "__main__":
     
     # ------- Build the age prediction network ------- #
     def age_predic_network(img_shape):
-        ''' Use ResNet101V2 as the backbone and add a dropout layer and a dense layer'''
-        model = ResNet101V2(input_shape=img_shape,include_top=False, weights=None, pooling='avg')
+        ''' Use ResNet50V2 as the backbone and add a dropout layer and a dense layer'''
+        model = ResNet50V2(input_shape=img_shape,include_top=False, weights=None, pooling='avg')
         o = Dropout(0.3)(model.layers[-1].output)
         o = Dense(1,activation='linear')(o)
         model = Model(model.layers[0].output, o)
