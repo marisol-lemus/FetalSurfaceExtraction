@@ -11,7 +11,7 @@
 * [Performance](#performance)
 
 ## Overview  
-This project focuses on the application of the CoTAN (Conditional Temporal Attention Network) for the reconstruction of fetal cortical surfaces using the dHCP dataset.
+This project focuses on the application of the CoTAN (Conditional Temporal Attention Network) for the reconstruction of fetal cortical surfaces using the dHCP dataset. It includes a brain age prediction model with ResNet architecture. 
 
 ## Dataset
 
