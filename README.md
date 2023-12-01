@@ -102,11 +102,11 @@ For visualization of the surfaces, we recommend to use Freesurfer, which visuali
 
 ## Performance 
 Brain Age Prediction Model:
-* 0.12±0.03mm geometric error
-* 0.07±0.03% selfintersecting faces
+* validation mae = 0.6785
+* validation loss = 0.34
  
 Surface Extraction Model:
-* validation mae = 0.6785
-* validation loss = 0.34 
+* 0.12±0.03mm geometric error
+* 0.07±0.03% selfintersecting faces
 
 ![](images/freesurfer.jpg)
